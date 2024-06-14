@@ -1,0 +1,739 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C920C2272C1D01E700C26602 /* BrameCalcApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C920C2262C1D01E700C26602 /* BrameCalcApp.swift */; };
+		C920C2292C1D01E700C26602 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C920C2282C1D01E700C26602 /* ContentView.swift */; };
+		C920C22B2C1D01E800C26602 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C920C22A2C1D01E800C26602 /* Assets.xcassets */; };
+		C920C22E2C1D01E800C26602 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C920C22D2C1D01E800C26602 /* Preview Assets.xcassets */; };
+		C920C2302C1D01E800C26602 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C920C22F2C1D01E800C26602 /* Persistence.swift */; };
+		C920C2332C1D01E800C26602 /* BrameCalc.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C920C2312C1D01E800C26602 /* BrameCalc.xcdatamodeld */; };
+		C920C23E2C1D01E800C26602 /* BrameCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C920C23D2C1D01E800C26602 /* BrameCalcTests.swift */; };
+		C920C2482C1D01E800C26602 /* BrameCalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C920C2472C1D01E800C26602 /* BrameCalcUITests.swift */; };
+		C920C24A2C1D01E800C26602 /* BrameCalcUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C920C2492C1D01E800C26602 /* BrameCalcUITestsLaunchTests.swift */; };
+		C920C2572C1D048D00C26602 /* GelCalc.swift in Sources */ = {isa = PBXBuildFile; fileRef = C920C2562C1D048D00C26602 /* GelCalc.swift */; };
+		C920C25A2C1D04B900C26602 /* Struct Gel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C920C2592C1D04B900C26602 /* Struct Gel.swift */; };
+		C920C25C2C1D051B00C26602 /* StageCalcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C920C25B2C1D051B00C26602 /* StageCalcView.swift */; };
+		C920C25F2C1D055900C26602 /* TrussCalc.swift in Sources */ = {isa = PBXBuildFile; fileRef = C920C25E2C1D055900C26602 /* TrussCalc.swift */; };
+		C920C2622C1D05A500C26602 /* TrussPref.swift in Sources */ = {isa = PBXBuildFile; fileRef = C920C2612C1D05A500C26602 /* TrussPref.swift */; };
+		C920C2642C1D05BF00C26602 /* calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C920C2632C1D05BF00C26602 /* calculator.swift */; };
+		C920C2662C1D05D000C26602 /* trussElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C920C2652C1D05D000C26602 /* trussElement.swift */; };
+		C920C2AA2C20D92A00C26602 /* StageResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = C920C2A92C20D92A00C26602 /* StageResults.swift */; };
+		C920C2AC2C20D94E00C26602 /* StageElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C920C2AB2C20D94E00C26602 /* StageElement.swift */; };
+		C920C2AE2C20D96200C26602 /* StageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C920C2AD2C20D96200C26602 /* StageItem.swift */; };
+		C9A056F82C20FE21004ACB08 /* AmpLoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A056F72C20FE21004ACB08 /* AmpLoadView.swift */; };
+		C9A056FD2C20FEE7004ACB08 /* AmpLoadData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A056FC2C20FEE7004ACB08 /* AmpLoadData.swift */; };
+		C9A056FF2C20FEF4004ACB08 /* Amp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A056FE2C20FEF4004ACB08 /* Amp.swift */; };
+		C9A057012C20FEFF004ACB08 /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A057002C20FEFF004ACB08 /* Speaker.swift */; };
+		C9A057032C20FF0D004ACB08 /* SpeakerLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A057022C20FF0D004ACB08 /* SpeakerLoad.swift */; };
+		C9A057062C2100C7004ACB08 /* AlignementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A057052C2100C7004ACB08 /* AlignementView.swift */; };
+		C9A057092C2100E9004ACB08 /* TopDelayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A057082C2100E9004ACB08 /* TopDelayData.swift */; };
+		C9A0570B2C210104004ACB08 /* SubDelayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0570A2C210104004ACB08 /* SubDelayData.swift */; };
+		C9A0570D2C210113004ACB08 /* TopPhaseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0570C2C210113004ACB08 /* TopPhaseData.swift */; };
+		C9A0570F2C21011F004ACB08 /* SubPhaseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0570E2C21011F004ACB08 /* SubPhaseData.swift */; };
+		C9A057112C21017B004ACB08 /* WaveLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A057102C21017B004ACB08 /* WaveLength.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C920C23A2C1D01E800C26602 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C920C21B2C1D01E700C26602 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C920C2222C1D01E700C26602;
+			remoteInfo = BrameCalc;
+		};
+		C920C2442C1D01E800C26602 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C920C21B2C1D01E700C26602 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C920C2222C1D01E700C26602;
+			remoteInfo = BrameCalc;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C920C2232C1D01E700C26602 /* BrameCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrameCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C920C2262C1D01E700C26602 /* BrameCalcApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrameCalcApp.swift; sourceTree = "<group>"; };
+		C920C2282C1D01E700C26602 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C920C22A2C1D01E800C26602 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C920C22D2C1D01E800C26602 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C920C22F2C1D01E800C26602 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		C920C2322C1D01E800C26602 /* BrameCalc.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BrameCalc.xcdatamodel; sourceTree = "<group>"; };
+		C920C2342C1D01E800C26602 /* BrameCalc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BrameCalc.entitlements; sourceTree = "<group>"; };
+		C920C2392C1D01E800C26602 /* BrameCalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrameCalcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C920C23D2C1D01E800C26602 /* BrameCalcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrameCalcTests.swift; sourceTree = "<group>"; };
+		C920C2432C1D01E800C26602 /* BrameCalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrameCalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C920C2472C1D01E800C26602 /* BrameCalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrameCalcUITests.swift; sourceTree = "<group>"; };
+		C920C2492C1D01E800C26602 /* BrameCalcUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrameCalcUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C920C2562C1D048D00C26602 /* GelCalc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GelCalc.swift; sourceTree = "<group>"; };
+		C920C2592C1D04B900C26602 /* Struct Gel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Struct Gel.swift"; sourceTree = "<group>"; };
+		C920C25B2C1D051B00C26602 /* StageCalcView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageCalcView.swift; sourceTree = "<group>"; };
+		C920C25E2C1D055900C26602 /* TrussCalc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrussCalc.swift; sourceTree = "<group>"; };
+		C920C2612C1D05A500C26602 /* TrussPref.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrussPref.swift; sourceTree = "<group>"; };
+		C920C2632C1D05BF00C26602 /* calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculator.swift; sourceTree = "<group>"; };
+		C920C2652C1D05D000C26602 /* trussElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trussElement.swift; sourceTree = "<group>"; };
+		C920C2A92C20D92A00C26602 /* StageResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageResults.swift; sourceTree = "<group>"; };
+		C920C2AB2C20D94E00C26602 /* StageElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageElement.swift; sourceTree = "<group>"; };
+		C920C2AD2C20D96200C26602 /* StageItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageItem.swift; sourceTree = "<group>"; };
+		C9A056F72C20FE21004ACB08 /* AmpLoadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmpLoadView.swift; sourceTree = "<group>"; };
+		C9A056FC2C20FEE7004ACB08 /* AmpLoadData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmpLoadData.swift; sourceTree = "<group>"; };
+		C9A056FE2C20FEF4004ACB08 /* Amp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amp.swift; sourceTree = "<group>"; };
+		C9A057002C20FEFF004ACB08 /* Speaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speaker.swift; sourceTree = "<group>"; };
+		C9A057022C20FF0D004ACB08 /* SpeakerLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerLoad.swift; sourceTree = "<group>"; };
+		C9A057052C2100C7004ACB08 /* AlignementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignementView.swift; sourceTree = "<group>"; };
+		C9A057082C2100E9004ACB08 /* TopDelayData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopDelayData.swift; sourceTree = "<group>"; };
+		C9A0570A2C210104004ACB08 /* SubDelayData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubDelayData.swift; sourceTree = "<group>"; };
+		C9A0570C2C210113004ACB08 /* TopPhaseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopPhaseData.swift; sourceTree = "<group>"; };
+		C9A0570E2C21011F004ACB08 /* SubPhaseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubPhaseData.swift; sourceTree = "<group>"; };
+		C9A057102C21017B004ACB08 /* WaveLength.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveLength.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C920C2202C1D01E700C26602 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C920C2362C1D01E800C26602 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C920C2402C1D01E800C26602 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C920C21A2C1D01E700C26602 = {
+			isa = PBXGroup;
+			children = (
+				C920C2252C1D01E700C26602 /* BrameCalc */,
+				C920C23C2C1D01E800C26602 /* BrameCalcTests */,
+				C920C2462C1D01E800C26602 /* BrameCalcUITests */,
+				C920C2242C1D01E700C26602 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C920C2242C1D01E700C26602 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C920C2232C1D01E700C26602 /* BrameCalc.app */,
+				C920C2392C1D01E800C26602 /* BrameCalcTests.xctest */,
+				C920C2432C1D01E800C26602 /* BrameCalcUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C920C2252C1D01E700C26602 /* BrameCalc */ = {
+			isa = PBXGroup;
+			children = (
+				C920C2262C1D01E700C26602 /* BrameCalcApp.swift */,
+				C920C2282C1D01E700C26602 /* ContentView.swift */,
+				C920C25D2C1D052200C26602 /* StageCalc */,
+				C920C2602C1D055F00C26602 /* TrussCalc */,
+				C920C2582C1D049900C26602 /* Gel Calc */,
+				C9A057072C2100D5004ACB08 /* Alignement */,
+				C9A057042C20FF14004ACB08 /* AmpLoad */,
+				C9A057122C21017F004ACB08 /* WaveLength */,
+				C920C22A2C1D01E800C26602 /* Assets.xcassets */,
+				C920C22F2C1D01E800C26602 /* Persistence.swift */,
+				C920C2342C1D01E800C26602 /* BrameCalc.entitlements */,
+				C920C2312C1D01E800C26602 /* BrameCalc.xcdatamodeld */,
+				C920C22C2C1D01E800C26602 /* Preview Content */,
+			);
+			path = BrameCalc;
+			sourceTree = "<group>";
+		};
+		C920C22C2C1D01E800C26602 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C920C22D2C1D01E800C26602 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C920C23C2C1D01E800C26602 /* BrameCalcTests */ = {
+			isa = PBXGroup;
+			children = (
+				C920C23D2C1D01E800C26602 /* BrameCalcTests.swift */,
+			);
+			path = BrameCalcTests;
+			sourceTree = "<group>";
+		};
+		C920C2462C1D01E800C26602 /* BrameCalcUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C920C2472C1D01E800C26602 /* BrameCalcUITests.swift */,
+				C920C2492C1D01E800C26602 /* BrameCalcUITestsLaunchTests.swift */,
+			);
+			path = BrameCalcUITests;
+			sourceTree = "<group>";
+		};
+		C920C2582C1D049900C26602 /* Gel Calc */ = {
+			isa = PBXGroup;
+			children = (
+				C920C2562C1D048D00C26602 /* GelCalc.swift */,
+				C920C2592C1D04B900C26602 /* Struct Gel.swift */,
+			);
+			path = "Gel Calc";
+			sourceTree = "<group>";
+		};
+		C920C25D2C1D052200C26602 /* StageCalc */ = {
+			isa = PBXGroup;
+			children = (
+				C920C25B2C1D051B00C26602 /* StageCalcView.swift */,
+				C920C2A92C20D92A00C26602 /* StageResults.swift */,
+				C920C2AB2C20D94E00C26602 /* StageElement.swift */,
+				C920C2AD2C20D96200C26602 /* StageItem.swift */,
+			);
+			path = StageCalc;
+			sourceTree = "<group>";
+		};
+		C920C2602C1D055F00C26602 /* TrussCalc */ = {
+			isa = PBXGroup;
+			children = (
+				C920C25E2C1D055900C26602 /* TrussCalc.swift */,
+				C920C2612C1D05A500C26602 /* TrussPref.swift */,
+				C920C2632C1D05BF00C26602 /* calculator.swift */,
+				C920C2652C1D05D000C26602 /* trussElement.swift */,
+			);
+			path = TrussCalc;
+			sourceTree = "<group>";
+		};
+		C9A057042C20FF14004ACB08 /* AmpLoad */ = {
+			isa = PBXGroup;
+			children = (
+				C9A056F72C20FE21004ACB08 /* AmpLoadView.swift */,
+				C9A056FC2C20FEE7004ACB08 /* AmpLoadData.swift */,
+				C9A056FE2C20FEF4004ACB08 /* Amp.swift */,
+				C9A057002C20FEFF004ACB08 /* Speaker.swift */,
+				C9A057022C20FF0D004ACB08 /* SpeakerLoad.swift */,
+			);
+			path = AmpLoad;
+			sourceTree = "<group>";
+		};
+		C9A057072C2100D5004ACB08 /* Alignement */ = {
+			isa = PBXGroup;
+			children = (
+				C9A057052C2100C7004ACB08 /* AlignementView.swift */,
+				C9A057082C2100E9004ACB08 /* TopDelayData.swift */,
+				C9A0570A2C210104004ACB08 /* SubDelayData.swift */,
+				C9A0570C2C210113004ACB08 /* TopPhaseData.swift */,
+				C9A0570E2C21011F004ACB08 /* SubPhaseData.swift */,
+			);
+			path = Alignement;
+			sourceTree = "<group>";
+		};
+		C9A057122C21017F004ACB08 /* WaveLength */ = {
+			isa = PBXGroup;
+			children = (
+				C9A057102C21017B004ACB08 /* WaveLength.swift */,
+			);
+			path = WaveLength;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C920C2222C1D01E700C26602 /* BrameCalc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C920C24D2C1D01E800C26602 /* Build configuration list for PBXNativeTarget "BrameCalc" */;
+			buildPhases = (
+				C920C21F2C1D01E700C26602 /* Sources */,
+				C920C2202C1D01E700C26602 /* Frameworks */,
+				C920C2212C1D01E700C26602 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BrameCalc;
+			productName = BrameCalc;
+			productReference = C920C2232C1D01E700C26602 /* BrameCalc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C920C2382C1D01E800C26602 /* BrameCalcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C920C2502C1D01E800C26602 /* Build configuration list for PBXNativeTarget "BrameCalcTests" */;
+			buildPhases = (
+				C920C2352C1D01E800C26602 /* Sources */,
+				C920C2362C1D01E800C26602 /* Frameworks */,
+				C920C2372C1D01E800C26602 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C920C23B2C1D01E800C26602 /* PBXTargetDependency */,
+			);
+			name = BrameCalcTests;
+			productName = BrameCalcTests;
+			productReference = C920C2392C1D01E800C26602 /* BrameCalcTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C920C2422C1D01E800C26602 /* BrameCalcUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C920C2532C1D01E800C26602 /* Build configuration list for PBXNativeTarget "BrameCalcUITests" */;
+			buildPhases = (
+				C920C23F2C1D01E800C26602 /* Sources */,
+				C920C2402C1D01E800C26602 /* Frameworks */,
+				C920C2412C1D01E800C26602 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C920C2452C1D01E800C26602 /* PBXTargetDependency */,
+			);
+			name = BrameCalcUITests;
+			productName = BrameCalcUITests;
+			productReference = C920C2432C1D01E800C26602 /* BrameCalcUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C920C21B2C1D01E700C26602 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					C920C2222C1D01E700C26602 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					C920C2382C1D01E800C26602 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = C920C2222C1D01E700C26602;
+					};
+					C920C2422C1D01E800C26602 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = C920C2222C1D01E700C26602;
+					};
+				};
+			};
+			buildConfigurationList = C920C21E2C1D01E700C26602 /* Build configuration list for PBXProject "BrameCalc" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C920C21A2C1D01E700C26602;
+			productRefGroup = C920C2242C1D01E700C26602 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C920C2222C1D01E700C26602 /* BrameCalc */,
+				C920C2382C1D01E800C26602 /* BrameCalcTests */,
+				C920C2422C1D01E800C26602 /* BrameCalcUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C920C2212C1D01E700C26602 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C920C22E2C1D01E800C26602 /* Preview Assets.xcassets in Resources */,
+				C920C22B2C1D01E800C26602 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C920C2372C1D01E800C26602 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C920C2412C1D01E800C26602 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C920C21F2C1D01E700C26602 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C920C2AC2C20D94E00C26602 /* StageElement.swift in Sources */,
+				C9A056F82C20FE21004ACB08 /* AmpLoadView.swift in Sources */,
+				C9A057062C2100C7004ACB08 /* AlignementView.swift in Sources */,
+				C9A057092C2100E9004ACB08 /* TopDelayData.swift in Sources */,
+				C920C25C2C1D051B00C26602 /* StageCalcView.swift in Sources */,
+				C920C2332C1D01E800C26602 /* BrameCalc.xcdatamodeld in Sources */,
+				C9A0570D2C210113004ACB08 /* TopPhaseData.swift in Sources */,
+				C9A056FD2C20FEE7004ACB08 /* AmpLoadData.swift in Sources */,
+				C920C2622C1D05A500C26602 /* TrussPref.swift in Sources */,
+				C920C2642C1D05BF00C26602 /* calculator.swift in Sources */,
+				C920C2302C1D01E800C26602 /* Persistence.swift in Sources */,
+				C920C25A2C1D04B900C26602 /* Struct Gel.swift in Sources */,
+				C920C2292C1D01E700C26602 /* ContentView.swift in Sources */,
+				C9A057032C20FF0D004ACB08 /* SpeakerLoad.swift in Sources */,
+				C920C2572C1D048D00C26602 /* GelCalc.swift in Sources */,
+				C9A0570B2C210104004ACB08 /* SubDelayData.swift in Sources */,
+				C920C25F2C1D055900C26602 /* TrussCalc.swift in Sources */,
+				C920C2662C1D05D000C26602 /* trussElement.swift in Sources */,
+				C9A0570F2C21011F004ACB08 /* SubPhaseData.swift in Sources */,
+				C920C2272C1D01E700C26602 /* BrameCalcApp.swift in Sources */,
+				C920C2AA2C20D92A00C26602 /* StageResults.swift in Sources */,
+				C9A057112C21017B004ACB08 /* WaveLength.swift in Sources */,
+				C9A057012C20FEFF004ACB08 /* Speaker.swift in Sources */,
+				C9A056FF2C20FEF4004ACB08 /* Amp.swift in Sources */,
+				C920C2AE2C20D96200C26602 /* StageItem.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C920C2352C1D01E800C26602 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C920C23E2C1D01E800C26602 /* BrameCalcTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C920C23F2C1D01E800C26602 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C920C2482C1D01E800C26602 /* BrameCalcUITests.swift in Sources */,
+				C920C24A2C1D01E800C26602 /* BrameCalcUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C920C23B2C1D01E800C26602 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C920C2222C1D01E700C26602 /* BrameCalc */;
+			targetProxy = C920C23A2C1D01E800C26602 /* PBXContainerItemProxy */;
+		};
+		C920C2452C1D01E800C26602 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C920C2222C1D01E700C26602 /* BrameCalc */;
+			targetProxy = C920C2442C1D01E800C26602 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C920C24B2C1D01E800C26602 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C920C24C2C1D01E800C26602 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		C920C24E2C1D01E800C26602 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BrameCalc/BrameCalc.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BrameCalc/Preview Content\"";
+				DEVELOPMENT_TEAM = 4B43GPHYV4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = OJ.BrameCalc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C920C24F2C1D01E800C26602 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BrameCalc/BrameCalc.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BrameCalc/Preview Content\"";
+				DEVELOPMENT_TEAM = 4B43GPHYV4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = OJ.BrameCalc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C920C2512C1D01E800C26602 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4B43GPHYV4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = OJ.BrameCalcTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrameCalc.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BrameCalc";
+			};
+			name = Debug;
+		};
+		C920C2522C1D01E800C26602 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4B43GPHYV4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = OJ.BrameCalcTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrameCalc.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BrameCalc";
+			};
+			name = Release;
+		};
+		C920C2542C1D01E800C26602 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4B43GPHYV4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = OJ.BrameCalcUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = BrameCalc;
+			};
+			name = Debug;
+		};
+		C920C2552C1D01E800C26602 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4B43GPHYV4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = OJ.BrameCalcUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = BrameCalc;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C920C21E2C1D01E700C26602 /* Build configuration list for PBXProject "BrameCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C920C24B2C1D01E800C26602 /* Debug */,
+				C920C24C2C1D01E800C26602 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C920C24D2C1D01E800C26602 /* Build configuration list for PBXNativeTarget "BrameCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C920C24E2C1D01E800C26602 /* Debug */,
+				C920C24F2C1D01E800C26602 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C920C2502C1D01E800C26602 /* Build configuration list for PBXNativeTarget "BrameCalcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C920C2512C1D01E800C26602 /* Debug */,
+				C920C2522C1D01E800C26602 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C920C2532C1D01E800C26602 /* Build configuration list for PBXNativeTarget "BrameCalcUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C920C2542C1D01E800C26602 /* Debug */,
+				C920C2552C1D01E800C26602 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C920C2312C1D01E800C26602 /* BrameCalc.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C920C2322C1D01E800C26602 /* BrameCalc.xcdatamodel */,
+			);
+			currentVersion = C920C2322C1D01E800C26602 /* BrameCalc.xcdatamodel */;
+			path = BrameCalc.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C920C21B2C1D01E700C26602 /* Project object */;
+}
