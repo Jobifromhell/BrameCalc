@@ -37,6 +37,16 @@
 		C9A0570D2C210113004ACB08 /* TopPhaseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0570C2C210113004ACB08 /* TopPhaseData.swift */; };
 		C9A0570F2C21011F004ACB08 /* SubPhaseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0570E2C21011F004ACB08 /* SubPhaseData.swift */; };
 		C9A057112C21017B004ACB08 /* WaveLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A057102C21017B004ACB08 /* WaveLength.swift */; };
+		C9A057142C2104C6004ACB08 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A057132C2104C6004ACB08 /* ScheduleView.swift */; };
+		C9A057172C210508004ACB08 /* PrefFestival.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A057162C210508004ACB08 /* PrefFestival.swift */; };
+		C9A057192C210520004ACB08 /* TimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A057182C210520004ACB08 /* TimeInterval.swift */; };
+		C9A0571B2C210547004ACB08 /* PreferenceShedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0571A2C210547004ACB08 /* PreferenceShedule.swift */; };
+		C9A0571D2C21055C004ACB08 /* UtilitiesSheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0571C2C21055C004ACB08 /* UtilitiesSheduler.swift */; };
+		C9A9F4942C210AB30014A7F8 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A9F4932C210AB30014A7F8 /* ContactView.swift */; };
+		C9A9F4972C210BBB0014A7F8 /* StructureBrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A9F4962C210BBB0014A7F8 /* StructureBrame.swift */; };
+		C9A9F4992C210BE20014A7F8 /* Organigramme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A9F4982C210BE20014A7F8 /* Organigramme.swift */; };
+		C9E1077F2C2105D4007D0F0F /* ScheduleCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E1077E2C2105D4007D0F0F /* ScheduleCalculator.swift */; };
+		C9E107812C2105FF007D0F0F /* ArtistInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E107802C2105FF007D0F0F /* ArtistInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +101,16 @@
 		C9A0570C2C210113004ACB08 /* TopPhaseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopPhaseData.swift; sourceTree = "<group>"; };
 		C9A0570E2C21011F004ACB08 /* SubPhaseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubPhaseData.swift; sourceTree = "<group>"; };
 		C9A057102C21017B004ACB08 /* WaveLength.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveLength.swift; sourceTree = "<group>"; };
+		C9A057132C2104C6004ACB08 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		C9A057162C210508004ACB08 /* PrefFestival.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefFestival.swift; sourceTree = "<group>"; };
+		C9A057182C210520004ACB08 /* TimeInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeInterval.swift; sourceTree = "<group>"; };
+		C9A0571A2C210547004ACB08 /* PreferenceShedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceShedule.swift; sourceTree = "<group>"; };
+		C9A0571C2C21055C004ACB08 /* UtilitiesSheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilitiesSheduler.swift; sourceTree = "<group>"; };
+		C9A9F4932C210AB30014A7F8 /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
+		C9A9F4962C210BBB0014A7F8 /* StructureBrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructureBrame.swift; sourceTree = "<group>"; };
+		C9A9F4982C210BE20014A7F8 /* Organigramme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Organigramme.swift; sourceTree = "<group>"; };
+		C9E1077E2C2105D4007D0F0F /* ScheduleCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCalculator.swift; sourceTree = "<group>"; };
+		C9E107802C2105FF007D0F0F /* ArtistInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,8 +167,10 @@
 				C920C2602C1D055F00C26602 /* TrussCalc */,
 				C920C2582C1D049900C26602 /* Gel Calc */,
 				C9A057072C2100D5004ACB08 /* Alignement */,
+				C9A057152C2104CE004ACB08 /* Schedule Module */,
 				C9A057042C20FF14004ACB08 /* AmpLoad */,
 				C9A057122C21017F004ACB08 /* WaveLength */,
+				C9A9F4952C210AF80014A7F8 /* Contact */,
 				C920C22A2C1D01E800C26602 /* Assets.xcassets */,
 				C920C22F2C1D01E800C26602 /* Persistence.swift */,
 				C920C2342C1D01E800C26602 /* BrameCalc.entitlements */,
@@ -244,6 +266,30 @@
 				C9A057102C21017B004ACB08 /* WaveLength.swift */,
 			);
 			path = WaveLength;
+			sourceTree = "<group>";
+		};
+		C9A057152C2104CE004ACB08 /* Schedule Module */ = {
+			isa = PBXGroup;
+			children = (
+				C9A057132C2104C6004ACB08 /* ScheduleView.swift */,
+				C9A057162C210508004ACB08 /* PrefFestival.swift */,
+				C9A057182C210520004ACB08 /* TimeInterval.swift */,
+				C9A0571A2C210547004ACB08 /* PreferenceShedule.swift */,
+				C9A0571C2C21055C004ACB08 /* UtilitiesSheduler.swift */,
+				C9E1077E2C2105D4007D0F0F /* ScheduleCalculator.swift */,
+				C9E107802C2105FF007D0F0F /* ArtistInfo.swift */,
+			);
+			path = "Schedule Module";
+			sourceTree = "<group>";
+		};
+		C9A9F4952C210AF80014A7F8 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				C9A9F4932C210AB30014A7F8 /* ContactView.swift */,
+				C9A9F4982C210BE20014A7F8 /* Organigramme.swift */,
+				C9A9F4962C210BBB0014A7F8 /* StructureBrame.swift */,
+			);
+			path = Contact;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,16 +425,23 @@
 				C920C2AC2C20D94E00C26602 /* StageElement.swift in Sources */,
 				C9A056F82C20FE21004ACB08 /* AmpLoadView.swift in Sources */,
 				C9A057062C2100C7004ACB08 /* AlignementView.swift in Sources */,
+				C9A0571B2C210547004ACB08 /* PreferenceShedule.swift in Sources */,
+				C9A057172C210508004ACB08 /* PrefFestival.swift in Sources */,
 				C9A057092C2100E9004ACB08 /* TopDelayData.swift in Sources */,
+				C9A9F4942C210AB30014A7F8 /* ContactView.swift in Sources */,
 				C920C25C2C1D051B00C26602 /* StageCalcView.swift in Sources */,
 				C920C2332C1D01E800C26602 /* BrameCalc.xcdatamodeld in Sources */,
+				C9A0571D2C21055C004ACB08 /* UtilitiesSheduler.swift in Sources */,
 				C9A0570D2C210113004ACB08 /* TopPhaseData.swift in Sources */,
+				C9E1077F2C2105D4007D0F0F /* ScheduleCalculator.swift in Sources */,
 				C9A056FD2C20FEE7004ACB08 /* AmpLoadData.swift in Sources */,
 				C920C2622C1D05A500C26602 /* TrussPref.swift in Sources */,
 				C920C2642C1D05BF00C26602 /* calculator.swift in Sources */,
+				C9E107812C2105FF007D0F0F /* ArtistInfo.swift in Sources */,
 				C920C2302C1D01E800C26602 /* Persistence.swift in Sources */,
 				C920C25A2C1D04B900C26602 /* Struct Gel.swift in Sources */,
 				C920C2292C1D01E700C26602 /* ContentView.swift in Sources */,
+				C9A057142C2104C6004ACB08 /* ScheduleView.swift in Sources */,
 				C9A057032C20FF0D004ACB08 /* SpeakerLoad.swift in Sources */,
 				C920C2572C1D048D00C26602 /* GelCalc.swift in Sources */,
 				C9A0570B2C210104004ACB08 /* SubDelayData.swift in Sources */,
@@ -396,10 +449,13 @@
 				C920C2662C1D05D000C26602 /* trussElement.swift in Sources */,
 				C9A0570F2C21011F004ACB08 /* SubPhaseData.swift in Sources */,
 				C920C2272C1D01E700C26602 /* BrameCalcApp.swift in Sources */,
+				C9A9F4972C210BBB0014A7F8 /* StructureBrame.swift in Sources */,
 				C920C2AA2C20D92A00C26602 /* StageResults.swift in Sources */,
 				C9A057112C21017B004ACB08 /* WaveLength.swift in Sources */,
 				C9A057012C20FEFF004ACB08 /* Speaker.swift in Sources */,
 				C9A056FF2C20FEF4004ACB08 /* Amp.swift in Sources */,
+				C9A057192C210520004ACB08 /* TimeInterval.swift in Sources */,
+				C9A9F4992C210BE20014A7F8 /* Organigramme.swift in Sources */,
 				C920C2AE2C20D96200C26602 /* StageItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

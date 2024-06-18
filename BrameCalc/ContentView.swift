@@ -4,8 +4,10 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             Sidebar()
+                .frame(width: 180) // Définissez la taille souhaitée pour la vue
+
             MainView()
-//                .frame(width: 600, height: 600) // Définissez la taille souhaitée pour la vue
+                .frame(width: 600, height: 600) // Définissez la taille souhaitée pour la vue
         }
     }
 }
@@ -23,14 +25,21 @@ struct Sidebar: View {
                 Label("TrussCalc", systemImage: "scalemass")
             }
             NavigationLink(destination: AmpLoadCalcView()) {
-                Label("AmpLoad", systemImage: "scalemass")
+                Label("AmpLoad", systemImage: "speaker")
             }
             NavigationLink(destination: PrealignementDelayView()) {
-                Label("Pre Alignement Delay", systemImage: "person.2")
+                Label("Alignement Delay", systemImage: "clock")
             }
             NavigationLink(destination: WaveLengthView()) {
                 Label("Longueur d'onde", systemImage: "waveform")
             }
+            NavigationLink(destination: ScheduleView()) {
+                Label("Planner", systemImage: "calendar")
+            }
+            NavigationLink(destination: ContactView()) {
+                Label("Contact", systemImage: "phone")
+            }
+
         }
         .listStyle(SidebarListStyle())
     }
@@ -38,6 +47,9 @@ struct Sidebar: View {
 
 struct MainView: View {
     var body: some View {
+        Image("logoBrame")
+            .scaledToFit()            .aspectRatio(contentMode: .fill)
+            .opacity(0.2)
         Text("Sélectionnez un outil dans la barre latérale")
             .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
@@ -46,7 +58,7 @@ struct MainView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-        .frame(width: 600, height: 600) // Définissez la taille souhaitée pour la vue
+//        .frame(width: 600, height: 600) // Définissez la taille souhaitée pour la vue
 
     }
 }
