@@ -25,7 +25,13 @@
 		C920C2662C1D05D000C26602 /* trussElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C920C2652C1D05D000C26602 /* trussElement.swift */; };
 		C920C2AA2C20D92A00C26602 /* StageResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = C920C2A92C20D92A00C26602 /* StageResults.swift */; };
 		C920C2AC2C20D94E00C26602 /* StageElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C920C2AB2C20D94E00C26602 /* StageElement.swift */; };
-		C920C2AE2C20D96200C26602 /* StageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C920C2AD2C20D96200C26602 /* StageItem.swift */; };
+		C920C2AE2C20D96200C26602 /* StageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C920C2AD2C20D96200C26602 /* StageView.swift */; };
+		C981B4A52C3DF2AD00BD352E /* RSEAccomplishementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C981B4A42C3DF2AD00BD352E /* RSEAccomplishementView.swift */; };
+		C981B4A72C3DF2C400BD352E /* RSECarbonFootPrintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C981B4A62C3DF2C400BD352E /* RSECarbonFootPrintView.swift */; };
+		C981B4A92C3DF53000BD352E /* RSEObjectives.swift in Sources */ = {isa = PBXBuildFile; fileRef = C981B4A82C3DF53000BD352E /* RSEObjectives.swift */; };
+		C981B4AB2C3DF53C00BD352E /* RSEAccomplishment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C981B4AA2C3DF53C00BD352E /* RSEAccomplishment.swift */; };
+		C981B4AD2C3DF55400BD352E /* RSECarbonFootPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C981B4AC2C3DF55400BD352E /* RSECarbonFootPrint.swift */; };
+		C981B4AF2C3E9EB100BD352E /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C981B4AE2C3E9EB100BD352E /* CloudKitManager.swift */; };
 		C9A056F82C20FE21004ACB08 /* AmpLoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A056F72C20FE21004ACB08 /* AmpLoadView.swift */; };
 		C9A056FD2C20FEE7004ACB08 /* AmpLoadData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A056FC2C20FEE7004ACB08 /* AmpLoadData.swift */; };
 		C9A056FF2C20FEF4004ACB08 /* Amp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A056FE2C20FEF4004ACB08 /* Amp.swift */; };
@@ -43,10 +49,26 @@
 		C9A0571B2C210547004ACB08 /* PreferenceShedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0571A2C210547004ACB08 /* PreferenceShedule.swift */; };
 		C9A0571D2C21055C004ACB08 /* UtilitiesSheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0571C2C21055C004ACB08 /* UtilitiesSheduler.swift */; };
 		C9A9F4942C210AB30014A7F8 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A9F4932C210AB30014A7F8 /* ContactView.swift */; };
-		C9A9F4972C210BBB0014A7F8 /* StructureBrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A9F4962C210BBB0014A7F8 /* StructureBrame.swift */; };
+		C9A9F4972C210BBB0014A7F8 /* StaffBrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A9F4962C210BBB0014A7F8 /* StaffBrame.swift */; };
 		C9A9F4992C210BE20014A7F8 /* Organigramme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A9F4982C210BE20014A7F8 /* Organigramme.swift */; };
+		C9A9F49B2C2229C80014A7F8 /* StageCalcPref.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A9F49A2C2229C80014A7F8 /* StageCalcPref.swift */; };
+		C9A9F49F2C236EF40014A7F8 /* RSEObjectiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A9F49E2C236EF40014A7F8 /* RSEObjectiveView.swift */; };
+		C9A9F4A12C236F0B0014A7F8 /* RSEEmissionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A9F4A02C236F0B0014A7F8 /* RSEEmissionData.swift */; };
+		C9A9F4A32C236F240014A7F8 /* ProjectMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A9F4A22C236F240014A7F8 /* ProjectMenuView.swift */; };
+		C9A9F4B12C23741B0014A7F8 /* AutorisationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A9F4B02C23741B0014A7F8 /* AutorisationView.swift */; };
+		C9A9F4B42C23742B0014A7F8 /* CertificateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A9F4B22C2374230014A7F8 /* CertificateView.swift */; };
+		C9A9F4BB2C2383200014A7F8 /* ProjectDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A9F4BA2C2383200014A7F8 /* ProjectDetailView.swift */; };
+		C9A9F4BD2C2387B40014A7F8 /* ProjectList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A9F4BC2C2387B40014A7F8 /* ProjectList.swift */; };
+		C9A9F4BF2C2387C80014A7F8 /* ProjectModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A9F4BE2C2387C80014A7F8 /* ProjectModels.swift */; };
+		C9A9F4CD2C238AE10014A7F8 /* ProjectFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A9F4CC2C238AE10014A7F8 /* ProjectFileManager.swift */; };
+		C9C9C2A32C3F1C0600F32CA1 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C9C2A22C3F1C0600F32CA1 /* UserDefaultsHelper.swift */; };
 		C9E1077F2C2105D4007D0F0F /* ScheduleCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E1077E2C2105D4007D0F0F /* ScheduleCalculator.swift */; };
 		C9E107812C2105FF007D0F0F /* ArtistInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E107802C2105FF007D0F0F /* ArtistInfo.swift */; };
+		C9ED16802C47D0BE005247B2 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = C9ED167F2C47D0BE005247B2 /* Sparkle */; };
+		C9F2EF692C44A03900F152BE /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F2EF682C44A03900F152BE /* ImagePicker.swift */; };
+		C9F2EF752C45D8AE00F152BE /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F2EF742C45D8AE00F152BE /* DetailsView.swift */; };
+		C9F2EF772C45D8E800F152BE /* PlansView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F2EF762C45D8E800F152BE /* PlansView.swift */; };
+		C9F2EF792C45D8F400F152BE /* PhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F2EF782C45D8F400F152BE /* PhotosView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,7 +111,13 @@
 		C920C2652C1D05D000C26602 /* trussElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trussElement.swift; sourceTree = "<group>"; };
 		C920C2A92C20D92A00C26602 /* StageResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageResults.swift; sourceTree = "<group>"; };
 		C920C2AB2C20D94E00C26602 /* StageElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageElement.swift; sourceTree = "<group>"; };
-		C920C2AD2C20D96200C26602 /* StageItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageItem.swift; sourceTree = "<group>"; };
+		C920C2AD2C20D96200C26602 /* StageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageView.swift; sourceTree = "<group>"; };
+		C981B4A42C3DF2AD00BD352E /* RSEAccomplishementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSEAccomplishementView.swift; sourceTree = "<group>"; };
+		C981B4A62C3DF2C400BD352E /* RSECarbonFootPrintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSECarbonFootPrintView.swift; sourceTree = "<group>"; };
+		C981B4A82C3DF53000BD352E /* RSEObjectives.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSEObjectives.swift; sourceTree = "<group>"; };
+		C981B4AA2C3DF53C00BD352E /* RSEAccomplishment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSEAccomplishment.swift; sourceTree = "<group>"; };
+		C981B4AC2C3DF55400BD352E /* RSECarbonFootPrint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSECarbonFootPrint.swift; sourceTree = "<group>"; };
+		C981B4AE2C3E9EB100BD352E /* CloudKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitManager.swift; sourceTree = "<group>"; };
 		C9A056F72C20FE21004ACB08 /* AmpLoadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmpLoadView.swift; sourceTree = "<group>"; };
 		C9A056FC2C20FEE7004ACB08 /* AmpLoadData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmpLoadData.swift; sourceTree = "<group>"; };
 		C9A056FE2C20FEF4004ACB08 /* Amp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amp.swift; sourceTree = "<group>"; };
@@ -107,10 +135,25 @@
 		C9A0571A2C210547004ACB08 /* PreferenceShedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceShedule.swift; sourceTree = "<group>"; };
 		C9A0571C2C21055C004ACB08 /* UtilitiesSheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilitiesSheduler.swift; sourceTree = "<group>"; };
 		C9A9F4932C210AB30014A7F8 /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
-		C9A9F4962C210BBB0014A7F8 /* StructureBrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructureBrame.swift; sourceTree = "<group>"; };
+		C9A9F4962C210BBB0014A7F8 /* StaffBrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffBrame.swift; sourceTree = "<group>"; };
 		C9A9F4982C210BE20014A7F8 /* Organigramme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Organigramme.swift; sourceTree = "<group>"; };
+		C9A9F49A2C2229C80014A7F8 /* StageCalcPref.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageCalcPref.swift; sourceTree = "<group>"; };
+		C9A9F49E2C236EF40014A7F8 /* RSEObjectiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSEObjectiveView.swift; sourceTree = "<group>"; };
+		C9A9F4A02C236F0B0014A7F8 /* RSEEmissionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSEEmissionData.swift; sourceTree = "<group>"; };
+		C9A9F4A22C236F240014A7F8 /* ProjectMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectMenuView.swift; sourceTree = "<group>"; };
+		C9A9F4B02C23741B0014A7F8 /* AutorisationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutorisationView.swift; sourceTree = "<group>"; };
+		C9A9F4B22C2374230014A7F8 /* CertificateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificateView.swift; sourceTree = "<group>"; };
+		C9A9F4BA2C2383200014A7F8 /* ProjectDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailView.swift; sourceTree = "<group>"; };
+		C9A9F4BC2C2387B40014A7F8 /* ProjectList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectList.swift; sourceTree = "<group>"; };
+		C9A9F4BE2C2387C80014A7F8 /* ProjectModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectModels.swift; sourceTree = "<group>"; };
+		C9A9F4CC2C238AE10014A7F8 /* ProjectFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectFileManager.swift; sourceTree = "<group>"; };
+		C9C9C2A22C3F1C0600F32CA1 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
 		C9E1077E2C2105D4007D0F0F /* ScheduleCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCalculator.swift; sourceTree = "<group>"; };
 		C9E107802C2105FF007D0F0F /* ArtistInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistInfo.swift; sourceTree = "<group>"; };
+		C9F2EF682C44A03900F152BE /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		C9F2EF742C45D8AE00F152BE /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		C9F2EF762C45D8E800F152BE /* PlansView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlansView.swift; sourceTree = "<group>"; };
+		C9F2EF782C45D8F400F152BE /* PhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +161,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9ED16802C47D0BE005247B2 /* Sparkle in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,19 +207,21 @@
 			children = (
 				C920C2262C1D01E700C26602 /* BrameCalcApp.swift */,
 				C920C2282C1D01E700C26602 /* ContentView.swift */,
-				C920C25D2C1D052200C26602 /* StageCalc */,
-				C920C2602C1D055F00C26602 /* TrussCalc */,
-				C920C2582C1D049900C26602 /* Gel Calc */,
-				C9A057072C2100D5004ACB08 /* Alignement */,
-				C9A057152C2104CE004ACB08 /* Schedule Module */,
-				C9A057042C20FF14004ACB08 /* AmpLoad */,
-				C9A057122C21017F004ACB08 /* WaveLength */,
+				C981B4AE2C3E9EB100BD352E /* CloudKitManager.swift */,
+				C9A9F4B52C23743A0014A7F8 /* Documents */,
+				C9A9F4AB2C2370680014A7F8 /* Projects */,
 				C9A9F4952C210AF80014A7F8 /* Contact */,
+				C9A9F4AC2C23707A0014A7F8 /* Stage&Truss */,
+				C920C2582C1D049900C26602 /* Light */,
+				C9A9F4AD2C2370A30014A7F8 /* Audio */,
+				C9A057152C2104CE004ACB08 /* FDR Event */,
+				C9A9F4AA2C23704B0014A7F8 /* RSE */,
 				C920C22A2C1D01E800C26602 /* Assets.xcassets */,
 				C920C22F2C1D01E800C26602 /* Persistence.swift */,
 				C920C2342C1D01E800C26602 /* BrameCalc.entitlements */,
 				C920C2312C1D01E800C26602 /* BrameCalc.xcdatamodeld */,
 				C920C22C2C1D01E800C26602 /* Preview Content */,
+				C9C9C2A22C3F1C0600F32CA1 /* UserDefaultsHelper.swift */,
 			);
 			path = BrameCalc;
 			sourceTree = "<group>";
@@ -205,13 +251,12 @@
 			path = BrameCalcUITests;
 			sourceTree = "<group>";
 		};
-		C920C2582C1D049900C26602 /* Gel Calc */ = {
+		C920C2582C1D049900C26602 /* Light */ = {
 			isa = PBXGroup;
 			children = (
-				C920C2562C1D048D00C26602 /* GelCalc.swift */,
-				C920C2592C1D04B900C26602 /* Struct Gel.swift */,
+				C9A9F4AE2C2370BD0014A7F8 /* Gel */,
 			);
-			path = "Gel Calc";
+			path = Light;
 			sourceTree = "<group>";
 		};
 		C920C25D2C1D052200C26602 /* StageCalc */ = {
@@ -220,7 +265,8 @@
 				C920C25B2C1D051B00C26602 /* StageCalcView.swift */,
 				C920C2A92C20D92A00C26602 /* StageResults.swift */,
 				C920C2AB2C20D94E00C26602 /* StageElement.swift */,
-				C920C2AD2C20D96200C26602 /* StageItem.swift */,
+				C920C2AD2C20D96200C26602 /* StageView.swift */,
+				C9A9F49A2C2229C80014A7F8 /* StageCalcPref.swift */,
 			);
 			path = StageCalc;
 			sourceTree = "<group>";
@@ -268,7 +314,83 @@
 			path = WaveLength;
 			sourceTree = "<group>";
 		};
-		C9A057152C2104CE004ACB08 /* Schedule Module */ = {
+		C9A057152C2104CE004ACB08 /* FDR Event */ = {
+			isa = PBXGroup;
+			children = (
+				C9A9F4AF2C2370EE0014A7F8 /* FDR */,
+			);
+			path = "FDR Event";
+			sourceTree = "<group>";
+		};
+		C9A9F4952C210AF80014A7F8 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				C9A9F4932C210AB30014A7F8 /* ContactView.swift */,
+				C9A9F4982C210BE20014A7F8 /* Organigramme.swift */,
+				C9A9F4962C210BBB0014A7F8 /* StaffBrame.swift */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		C9A9F4AA2C23704B0014A7F8 /* RSE */ = {
+			isa = PBXGroup;
+			children = (
+				C9A9F49E2C236EF40014A7F8 /* RSEObjectiveView.swift */,
+				C981B4A82C3DF53000BD352E /* RSEObjectives.swift */,
+				C981B4A42C3DF2AD00BD352E /* RSEAccomplishementView.swift */,
+				C981B4AA2C3DF53C00BD352E /* RSEAccomplishment.swift */,
+				C981B4A62C3DF2C400BD352E /* RSECarbonFootPrintView.swift */,
+				C981B4AC2C3DF55400BD352E /* RSECarbonFootPrint.swift */,
+				C9A9F4A02C236F0B0014A7F8 /* RSEEmissionData.swift */,
+			);
+			path = RSE;
+			sourceTree = "<group>";
+		};
+		C9A9F4AB2C2370680014A7F8 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				C9A9F4A22C236F240014A7F8 /* ProjectMenuView.swift */,
+				C9A9F4BA2C2383200014A7F8 /* ProjectDetailView.swift */,
+				C9F2EF742C45D8AE00F152BE /* DetailsView.swift */,
+				C9A9F4BC2C2387B40014A7F8 /* ProjectList.swift */,
+				C9A9F4BE2C2387C80014A7F8 /* ProjectModels.swift */,
+				C9A9F4CC2C238AE10014A7F8 /* ProjectFileManager.swift */,
+				C9F2EF762C45D8E800F152BE /* PlansView.swift */,
+				C9F2EF782C45D8F400F152BE /* PhotosView.swift */,
+				C9F2EF682C44A03900F152BE /* ImagePicker.swift */,
+			);
+			path = Projects;
+			sourceTree = "<group>";
+		};
+		C9A9F4AC2C23707A0014A7F8 /* Stage&Truss */ = {
+			isa = PBXGroup;
+			children = (
+				C920C25D2C1D052200C26602 /* StageCalc */,
+				C920C2602C1D055F00C26602 /* TrussCalc */,
+			);
+			path = "Stage&Truss";
+			sourceTree = "<group>";
+		};
+		C9A9F4AD2C2370A30014A7F8 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				C9A057072C2100D5004ACB08 /* Alignement */,
+				C9A057042C20FF14004ACB08 /* AmpLoad */,
+				C9A057122C21017F004ACB08 /* WaveLength */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		C9A9F4AE2C2370BD0014A7F8 /* Gel */ = {
+			isa = PBXGroup;
+			children = (
+				C920C2562C1D048D00C26602 /* GelCalc.swift */,
+				C920C2592C1D04B900C26602 /* Struct Gel.swift */,
+			);
+			path = Gel;
+			sourceTree = "<group>";
+		};
+		C9A9F4AF2C2370EE0014A7F8 /* FDR */ = {
 			isa = PBXGroup;
 			children = (
 				C9A057132C2104C6004ACB08 /* ScheduleView.swift */,
@@ -279,17 +401,16 @@
 				C9E1077E2C2105D4007D0F0F /* ScheduleCalculator.swift */,
 				C9E107802C2105FF007D0F0F /* ArtistInfo.swift */,
 			);
-			path = "Schedule Module";
+			path = FDR;
 			sourceTree = "<group>";
 		};
-		C9A9F4952C210AF80014A7F8 /* Contact */ = {
+		C9A9F4B52C23743A0014A7F8 /* Documents */ = {
 			isa = PBXGroup;
 			children = (
-				C9A9F4932C210AB30014A7F8 /* ContactView.swift */,
-				C9A9F4982C210BE20014A7F8 /* Organigramme.swift */,
-				C9A9F4962C210BBB0014A7F8 /* StructureBrame.swift */,
+				C9A9F4B02C23741B0014A7F8 /* AutorisationView.swift */,
+				C9A9F4B22C2374230014A7F8 /* CertificateView.swift */,
 			);
-			path = Contact;
+			path = Documents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +429,9 @@
 			dependencies = (
 			);
 			name = BrameCalc;
+			packageProductDependencies = (
+				C9ED167F2C47D0BE005247B2 /* Sparkle */,
+			);
 			productName = BrameCalc;
 			productReference = C920C2232C1D01E700C26602 /* BrameCalc.app */;
 			productType = "com.apple.product-type.application";
@@ -380,6 +504,9 @@
 				Base,
 			);
 			mainGroup = C920C21A2C1D01E700C26602;
+			packageReferences = (
+				C9ED167E2C47D0BE005247B2 /* XCRemoteSwiftPackageReference "Sparkle" */,
+			);
 			productRefGroup = C920C2242C1D01E700C26602 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -425,38 +552,59 @@
 				C920C2AC2C20D94E00C26602 /* StageElement.swift in Sources */,
 				C9A056F82C20FE21004ACB08 /* AmpLoadView.swift in Sources */,
 				C9A057062C2100C7004ACB08 /* AlignementView.swift in Sources */,
+				C981B4A72C3DF2C400BD352E /* RSECarbonFootPrintView.swift in Sources */,
 				C9A0571B2C210547004ACB08 /* PreferenceShedule.swift in Sources */,
 				C9A057172C210508004ACB08 /* PrefFestival.swift in Sources */,
 				C9A057092C2100E9004ACB08 /* TopDelayData.swift in Sources */,
+				C9A9F4CD2C238AE10014A7F8 /* ProjectFileManager.swift in Sources */,
+				C981B4AB2C3DF53C00BD352E /* RSEAccomplishment.swift in Sources */,
 				C9A9F4942C210AB30014A7F8 /* ContactView.swift in Sources */,
+				C981B4AF2C3E9EB100BD352E /* CloudKitManager.swift in Sources */,
+				C9A9F4BD2C2387B40014A7F8 /* ProjectList.swift in Sources */,
 				C920C25C2C1D051B00C26602 /* StageCalcView.swift in Sources */,
 				C920C2332C1D01E800C26602 /* BrameCalc.xcdatamodeld in Sources */,
 				C9A0571D2C21055C004ACB08 /* UtilitiesSheduler.swift in Sources */,
 				C9A0570D2C210113004ACB08 /* TopPhaseData.swift in Sources */,
+				C9A9F4BB2C2383200014A7F8 /* ProjectDetailView.swift in Sources */,
+				C981B4AD2C3DF55400BD352E /* RSECarbonFootPrint.swift in Sources */,
 				C9E1077F2C2105D4007D0F0F /* ScheduleCalculator.swift in Sources */,
 				C9A056FD2C20FEE7004ACB08 /* AmpLoadData.swift in Sources */,
 				C920C2622C1D05A500C26602 /* TrussPref.swift in Sources */,
+				C9A9F4B12C23741B0014A7F8 /* AutorisationView.swift in Sources */,
 				C920C2642C1D05BF00C26602 /* calculator.swift in Sources */,
 				C9E107812C2105FF007D0F0F /* ArtistInfo.swift in Sources */,
+				C9A9F4A12C236F0B0014A7F8 /* RSEEmissionData.swift in Sources */,
+				C9F2EF752C45D8AE00F152BE /* DetailsView.swift in Sources */,
 				C920C2302C1D01E800C26602 /* Persistence.swift in Sources */,
+				C981B4A52C3DF2AD00BD352E /* RSEAccomplishementView.swift in Sources */,
 				C920C25A2C1D04B900C26602 /* Struct Gel.swift in Sources */,
 				C920C2292C1D01E700C26602 /* ContentView.swift in Sources */,
 				C9A057142C2104C6004ACB08 /* ScheduleView.swift in Sources */,
+				C9A9F49F2C236EF40014A7F8 /* RSEObjectiveView.swift in Sources */,
 				C9A057032C20FF0D004ACB08 /* SpeakerLoad.swift in Sources */,
 				C920C2572C1D048D00C26602 /* GelCalc.swift in Sources */,
+				C9A9F4BF2C2387C80014A7F8 /* ProjectModels.swift in Sources */,
+				C9A9F49B2C2229C80014A7F8 /* StageCalcPref.swift in Sources */,
+				C9A9F4B42C23742B0014A7F8 /* CertificateView.swift in Sources */,
 				C9A0570B2C210104004ACB08 /* SubDelayData.swift in Sources */,
 				C920C25F2C1D055900C26602 /* TrussCalc.swift in Sources */,
 				C920C2662C1D05D000C26602 /* trussElement.swift in Sources */,
 				C9A0570F2C21011F004ACB08 /* SubPhaseData.swift in Sources */,
 				C920C2272C1D01E700C26602 /* BrameCalcApp.swift in Sources */,
-				C9A9F4972C210BBB0014A7F8 /* StructureBrame.swift in Sources */,
+				C9C9C2A32C3F1C0600F32CA1 /* UserDefaultsHelper.swift in Sources */,
+				C9A9F4972C210BBB0014A7F8 /* StaffBrame.swift in Sources */,
 				C920C2AA2C20D92A00C26602 /* StageResults.swift in Sources */,
 				C9A057112C21017B004ACB08 /* WaveLength.swift in Sources */,
 				C9A057012C20FEFF004ACB08 /* Speaker.swift in Sources */,
 				C9A056FF2C20FEF4004ACB08 /* Amp.swift in Sources */,
+				C981B4A92C3DF53000BD352E /* RSEObjectives.swift in Sources */,
 				C9A057192C210520004ACB08 /* TimeInterval.swift in Sources */,
 				C9A9F4992C210BE20014A7F8 /* Organigramme.swift in Sources */,
-				C920C2AE2C20D96200C26602 /* StageItem.swift in Sources */,
+				C9F2EF692C44A03900F152BE /* ImagePicker.swift in Sources */,
+				C9F2EF792C45D8F400F152BE /* PhotosView.swift in Sources */,
+				C9F2EF772C45D8E800F152BE /* PlansView.swift in Sources */,
+				C920C2AE2C20D96200C26602 /* StageView.swift in Sources */,
+				C9A9F4A32C236F240014A7F8 /* ProjectMenuView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,7 +694,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -603,7 +751,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -625,11 +773,13 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = OJ.BrameCalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -652,11 +802,13 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = OJ.BrameCalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -777,6 +929,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C9ED167E2C47D0BE005247B2 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.6.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C9ED167F2C47D0BE005247B2 /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C9ED167E2C47D0BE005247B2 /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		C920C2312C1D01E800C26602 /* BrameCalc.xcdatamodeld */ = {

@@ -1,67 +1,78 @@
 import SwiftUI
 
-struct OrganizationChartView: View {
+struct OrganigramView: View {
     var body: some View {
-        VStack {
-            Text("Organigramme du Groupe BRAME")
-                .font(.largeTitle)
-                .padding()
-
-            HStack {
-                VStack {
-                    Image("logo_cts")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 50, height: 50)
-                    Text("CTS")
+        ScrollView {
+            VStack(spacing: 20) {
+                Text("Organigramme")
+                    .font(.largeTitle)
+                    .padding(.top, 20)
+                
+                OrganigramNode(name: "Président", systemImage: "crown.fill")
+                
+                VStack(spacing: 20) {
+                    OrganigramNode(name: "Directeur Financier", systemImage: "dollarsign.circle.fill")
+                    OrganigramNode(name: "Directeur Commercial", systemImage: "briefcase.fill")
+                    OrganigramNode(name: "Directeur Technique", systemImage: "gearshape.fill")
                 }
-                VStack {
-                    Image("logo_av")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 50, height: 50)
-                    Text("AV")
+                .padding(.leading, 40)
+                
+                VStack(spacing: 20) {
+                    OrganigramNode(name: "Dessinateur Technique", systemImage: "pencil.and.outline")
+                    OrganigramNode(name: "Responsable Logistique", systemImage: "truck.fill")
+                    OrganigramNode(name: "Planificateur", systemImage: "calendar")
                 }
-                VStack {
-                    Image("logo_electricite")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 50, height: 50)
-                    Text("ELECTRICITE")
+                .padding(.leading, 80)
+                
+                VStack(spacing: 20) {
+                    OrganigramNode(name: "Commercial Agence", systemImage: "person.fill")
+                    OrganigramNode(name: "Commercial AV", systemImage: "video.fill")
+                    OrganigramNode(name: "Commercial CTS", systemImage: "wrench.fill")
+                    OrganigramNode(name: "Commercial Déco", systemImage: "paintbrush.fill")
                 }
+                .padding(.leading, 120)
+                
+                VStack(spacing: 20) {
+                    OrganigramNode(name: "Technicien", systemImage: "hammer.fill")
+                }
+                .padding(.leading, 160)
+                
+                Spacer()
             }
-
-            HStack {
-                VStack {
-                    Image("logo_truss_rig")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 50, height: 50)
-                    Text("TRUSS/RIG")
-                }
-                VStack {
-                    Image("logo_agence")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 50, height: 50)
-                    Text("AGENCE")
-                }
-                VStack {
-                    Image("logo_regie_generale")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 50, height: 50)
-                    Text("REGIE GENERALE")
-                }
-                VStack {
-                    Image("logo_deco")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 50, height: 50)
-                    Text("DECO")
-                }
-            }
+            .padding()
         }
-        .padding()
+    }
+}
+
+struct OrganigramNode: View {
+    let name: String
+    let systemImage: String
+    
+    var body: some View {
+        HStack {
+            Image(systemName: systemImage)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 40, height: 40)
+                .padding()
+                .background(Color.blue.opacity(0.1))
+                .clipShape(Circle())
+            
+            Text(name)
+                .font(.headline)
+                .multilineTextAlignment(.leading)
+                .padding(.leading, 10)
+        }
+        .frame(height: 60)
+        .background(Color.gray.opacity(0.1))
+        .cornerRadius(10)
+        .shadow(radius: 5)
+        .padding(.horizontal, 20)
+    }
+}
+
+struct OrganigramView_Previews: PreviewProvider {
+    static var previews: some View {
+        OrganigramView()
     }
 }

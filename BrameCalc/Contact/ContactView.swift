@@ -10,51 +10,50 @@ struct ContactView: View {
     ]
 
     var body: some View {
-        VStack {
-            Text("Contactez nos départements")
-                .font(.largeTitle)
-                .padding()
+           VStack {
+               Text("Contactez nos départements")
+                   .font(.largeTitle)
+                   .padding()
 
-            ScrollView {
-                LazyVGrid(columns: columns, spacing: 20) {
-                    ForEach(departments) { department in
-                        Button(action: {
-                            selectedDepartment = department
-                        }) {
-                            VStack {
-                                Image(systemName: department.logo)
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 60, height: 60)
-                                    .padding()
-                                Text(department.name)
-                                    .font(.headline)
-//                                Text(department.fullName)
-//                                    .font(.subheadline)
-//                                    .foregroundColor(.secondary)
-                            }
-                        }
-                        .buttonStyle(PlainButtonStyle())
-                    }
-                }
-                .padding()
-            }
+               ScrollView {
+                   LazyVGrid(columns: columns, spacing: 20) {
+                       ForEach(departments) { department in
+                           Button(action: {
+                               selectedDepartment = department
+                           }) {
+                               VStack {
+                                   Image(systemName: department.logo)
+                                       .resizable()
+                                       .scaledToFit()
+                                       .frame(width: 60, height: 60)
+//                                       .padding()
+                                   Text(department.name)
+                                       .font(.headline)
+//                                   Text(department.fullName)
+//                                       .font(.subheadline)
+//                                       .foregroundColor(.secondary)
+                               }
+                           }
+                           .buttonStyle(PlainButtonStyle())
+                       }
+                   }
+                   .padding()
+               }
 
-            if let department = selectedDepartment {
-                VStack {
-                    Text("Contact \(department.name)")
-                        .font(.title2)
-                        .padding()
-                    Text("Responsable : \(department.fullName)")
-                    Text("Téléphone : \(department.phone)")
-                    Text("Email : \(department.email)")
-                }
-                .padding()
-            }
+               if let department = selectedDepartment {
+                   VStack {
+                       Text("Contact \(department.name)")
+                           .font(.title2)
+                           .padding()
+                       Text("Responsable : \(department.fullName)")
+                       Link("Téléphone : \(department.phone)", destination: URL(string: "tel:\(department.phone)")!)
+                       Link("Email : \(department.email)", destination: URL(string: "mailto:\(department.email)")!)
+                   }
+                   .padding()
+               }
 
-            Spacer()
-        }
-        .padding()
-    }
-}
-
+               Spacer()
+           }
+           .padding()
+       }
+   }
