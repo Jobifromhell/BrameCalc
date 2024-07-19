@@ -11,6 +11,15 @@ struct ProjectListView: View {
                     selectedProject = project
                 }) {
                     Text(project.name)
+                        .padding(10)
+                        .background(
+                            selectedProject == project ? Color.blue.opacity(0.5) : Color.clear
+                        )
+                        .cornerRadius(8)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 8)
+                                .stroke(selectedProject == project ? Color.blue : Color.clear, lineWidth: 2)
+                        )
                 }
             }
             .onDelete(perform: deleteProject)

@@ -4,294 +4,251 @@ struct GeneralDetailsView: View {
     @ObservedObject var project: Project
     
     var body: some View {
-        Form {
-            Section(header: Text("Nom et Description du Projet").font(.headline)) {
-                HStack {
-                    Text("Nom du projet")
-                    Spacer()
-                    ModernTextField(placeholder: "", text: $project.name)
+        ScrollView {
+            VStack(alignment: .leading, spacing: 20) {
+                Section(header: Text("Nom et Description du Projet").font(.headline)) {
+                    CardView {
+                        VStack(alignment: .leading, spacing: 10) {
+                            LabeledTextField(label: "Nom du projet", text: $project.name)
+                            LabeledTextEditor(label: "Description", text: $project.description)
+                            LabeledTextField(label: "Société", text: $project.agencyName)
+                            LabeledTextField(label: "Contact client", text: $project.agencyContact)
+                            LabeledTextField(label: "Mail client", text: $project.agencyMail)
+                            LabeledTextField(label: "Téléphone client", text: $project.agencyPhone)
+                        }
+                    }
                 }
-                HStack {
-                    Text("Description")
-                    Spacer()
-                    ModernTextEditor(placeholder: "", text: $project.description)
-                        .frame(height: 100)
-                }
-                HStack {
-                    Text("Société")
-                    Spacer()
-                    ModernTextField(placeholder: "", text: $project.agencyName)
-                }
-                HStack {
-                    Text("Contact client")
-                    Spacer()
-                    ModernTextField(placeholder: "", text: $project.agencyContact)
-                }
-                HStack {
-                    Text("Mail client")
-                    Spacer()
-                    ModernTextField(placeholder: "", text: $project.agencyMail)
-                }
-                HStack {
-                    Text("Téléphone client")
-                    Spacer()
-                    ModernTextField(placeholder: "", text: $project.agencyPhone)
+                
+                Section(header: Text("Lieu et Date de l'Événement").font(.headline)) {
+                    CardView {
+                        VStack(alignment: .leading, spacing: 10) {
+                            LabeledTextField(label: "Lieu", text: $project.eventLocation)
+                            //                            LabeledDatePicker(label: "Date", date: $project.eventDate)
+                            HStack{
+                                LabeledDatePicker(label: "Montage", date: $project.setupDate)
+                                LabeledDatePicker(label: "Début d'exploitation", date: $project.operationStartDate)
+                                LabeledDatePicker(label: "Fin d'exploitation", date: $project.operationEndDate)
+                                LabeledDatePicker(label: "Démontage", date: $project.teardownDate)
+                            }
+                        }
+                    }
                 }
             }
-            
-            Section(header: Text("Lieu et Date de l'Événement").font(.headline)) {
-                HStack {
-                    Text("Lieu")
-                    Spacer()
-                    ModernTextField(placeholder: "", text: $project.eventLocation)
-                }
-                HStack {
-                    Text("Date")
-                    Spacer()
-                    DatePicker("", selection: $project.eventDate, displayedComponents: .date)
-                        .labelsHidden()
-                }
-            }
+            .padding()
         }
     }
 }
+
+import SwiftUI
 
 struct CTSDetailsView: View {
     @ObservedObject var project: Project
     
     var body: some View {
-        Form {
+        VStack(alignment: .leading, spacing: 20) {
             Section(header: Text("CTS").font(.headline)) {
-                HStack {
-                    Text("Type de tente")
-                    Spacer()
-                    ModernTextField(placeholder: "", text: $project.tentType)
-                }
-                HStack {
-                    Text("Dimensions")
-                    Spacer()
-                    ModernTextField(placeholder: "", text: $project.tentDimensions)
-                }
-                HStack {
-                    Text("Hauteur")
-                    Spacer()
-                    ModernTextField(placeholder: "", text: $project.tentHeight)
-                }
-                HStack {
-                    Text("Bâche")
-                    Spacer()
-                    ModernTextField(placeholder: "", text: $project.tentCover)
-                }
-                HStack {
-                    Text("Chauffage")
-                    Spacer()
-                    ModernTextField(placeholder: "", text: $project.tentHeating)
-                }
-                HStack {
-                    Text("Climatisation")
-                    Spacer()
-                    ModernTextField(placeholder: "", text: $project.tentAC)
-                }
-                HStack {
-                    Text("Parquet")
-                    Spacer()
-                    ModernTextField(placeholder: "", text: $project.tentFlooring)
+                CardView {
+                    VStack(alignment: .leading, spacing: 10) {
+                        LabeledTextField(label: "Type de tente", text: $project.tentType)
+                        LabeledTextField(label: "Dimensions", text: $project.tentDimensions)
+                        LabeledTextField(label: "Hauteur", text: $project.tentHeight)
+                        LabeledTextField(label: "Bâche", text: $project.tentCover)
+                        LabeledTextField(label: "Chauffage", text: $project.tentHeating)
+                        LabeledTextField(label: "Climatisation", text: $project.tentAC)
+                        LabeledTextField(label: "Parquet", text: $project.tentFlooring)
+                        LabeledTextField(label: "Lestage/Piquetage", text: $project.tentLest)
+
+                    }
                 }
             }
-            Section(header: Text("Accessoires de la tente").font(.headline)) {
-                HStack {
-                    Text("Accessoires")
-                    Spacer()
-                    ModernTextField(placeholder: "", text: $project.tentAccessories)
+            
+            Section(header: Text("Accessoires CTS").font(.headline)) {
+                CardView {
+                    VStack(alignment: .leading, spacing: 10) {
+                        LabeledTextField(label: "Accessoires", text: $project.tentAccessories)
+                    }
+                }
+            }
+            Section(header: Text("Scène/Podium").font(.headline)) {
+                CardView {
+                    VStack(alignment: .leading, spacing: 10) {
+                        LabeledTextField(label: "Scène/Podium", text: $project.stageStruct)
+                    }
                 }
             }
         }
-        .navigationTitle(Text(project.name.isEmpty ? "Nouveau Projet" : project.name))
+        .padding()
     }
 }
+
+import SwiftUI
 
 struct DistribDetailsView: View {
     @ObservedObject var project: Project
     
     var body: some View {
-        Form {
+        VStack(alignment: .leading, spacing: 20) {
             Section(header: Text("Distribution Électrique").font(.headline)) {
-                HStack {
-                    Text("Source d'alimentation")
-                    Spacer()
-                    ModernTextField(placeholder: "", text: $project.powerSource)
-                }
-                HStack {
-                    Text("Puissance requise (kW)")
-                    Spacer()
-                    ModernTextField(placeholder: "", text: $project.powerRequirement)
-                }
-                HStack {
-                    Text("Nombre de prises")
-                    Spacer()
-                    ModernTextField(placeholder: "", text: $project.outletCount)
-                }
-                HStack {
-                    Text("Type de câbles")
-                    Spacer()
-                    ModernTextField(placeholder: "", text: $project.cableType)
-                }
-                HStack {
-                    Text("Type de connexion")
-                    Spacer()
-                    ModernTextField(placeholder: "", text: $project.connectionType)
+                CardView {
+                    VStack(alignment: .leading, spacing: 10) {
+                        LabeledTextField(label: "Source d'alimentation", text: $project.powerSource)
+                        LabeledTextField(label: "Puissance disponible (kW)", text: $project.powerRequirement)
+                        LabeledTextField(label: "Type de connexion", text: $project.connectionType)
+                        LabeledTextField(label: "Nombre et type de prises", text: $project.outletCount)
+                        LabeledTextField(label: "Type de câbles", text: $project.cableType)
+                        LabeledTextField(label: "Passage de câbles", text: $project.cableWay)
+                        LabeledTextField(label: "Contact Electro", text: $project.electroContact)
+
+                    }
                 }
             }
-            Section(header: Text("").font(.headline)) {
-                HStack {
-                    Text("Disjoncteurs")
-                    Spacer()
-                    ModernTextField(placeholder: "", text: $project.circuitBreakers)
-                }
-                HStack {
-                    Text("Parafoudres")
-                    Spacer()
-                    ModernTextField(placeholder: "", text: $project.surgeProtection)
-                }
-                HStack {
-                    Text("Mise à la terre")
-                    Spacer()
-                    ModernTextField(placeholder: "", text: $project.groundingDetails)
-                }
-            }
+            
+//            Section(header: Text("").font(.headline)) {
+//                CardView {
+//                    VStack(alignment: .leading, spacing: 10) {
+//                        LabeledTextField(label: "Disjoncteurs", text: $project.circuitBreakers)
+//                        LabeledTextField(label: "Parafoudres", text: $project.surgeProtection)
+//                        LabeledTextField(label: "Mise à la terre", text: $project.groundingDetails)
+//                    }
+//                }
+//            }
         }
-        .navigationTitle(Text(project.name.isEmpty ? "Nouveau Projet" : project.name))
+        .padding()
     }
 }
+
+import SwiftUI
 
 struct AVDetailsView: View {
     @ObservedObject var project: Project
     
     var body: some View {
-        Form {
+        VStack(alignment: .leading, spacing: 20) {
             Section(header: Text("Sonorisation").font(.headline)) {
-                HStack {
-                    Text("Type de système")
-                    Spacer()
-                    ModernTextField(placeholder: "", text: $project.soundSystemType)
-                }
-                HStack {
-                    Text("Nombre de haut-parleurs")
-                    Spacer()
-                    ModernTextField(placeholder: "", text: $project.speakerCount)
-                }
-                HStack {
-                    Text("Zone à couvrir")
-                    Spacer()
-                    ModernTextField(placeholder: "", text: $project.soundCoverArea)
+                CardView {
+                    VStack(alignment: .leading, spacing: 10) {
+                        LabeledTextField(label: "Type de système", text: $project.soundSystemType)
+                        LabeledTextField(label: "Nombre de haut-parleurs", text: $project.speakerCount)
+                        LabeledTextField(label: "Zone à couvrir", text: $project.soundCoverArea)
+                        LabeledTextField(label: "Audience attendue", text: $project.soundExpectedAudience)
+                        LabeledTextField(label: "Contraintes d'espace", text: $project.soundSpaceContraint)
+                        LabeledTextField(label: "Charge maximum (Kg)", text: $project.maxLoad)
+                        LabeledTextField(label: "Rigg son", text: $project.soundRig)
+
+                    }
                 }
             }
             
             Section(header: Text("Éclairage").font(.headline)) {
-                HStack {
-                    Text("Type de projecteurs")
-                    Spacer()
-                    ModernTextField(placeholder: "", text: $project.lightingType)
-                }
-                HStack {
-                    Text("Nombre de projecteurs")
-                    Spacer()
-                    ModernTextField(placeholder: "", text: $project.lightingCount)
-                }
-                HStack {
-                    Text("Puissance (W)")
-                    Spacer()
-                    ModernTextField(placeholder: "", text: $project.lightingPower)
+                CardView {
+                    VStack(alignment: .leading, spacing: 10) {
+                        LabeledTextField(label: "Type de plan de feu", text: $project.lightingType)
+                        LabeledTextField(label: "Nombre de projecteurs", text: $project.lightingCount)
+                        LabeledTextField(label: "Sujets à éclairer", text: $project.lightingSubnject)
+                        LabeledTextField(label: "Contraintes d'espace", text: $project.lightSpaceContraint)
+                        LabeledTextField(label: "Charge maximum (Kg)", text: $project.maxLoad)
+                        LabeledTextField(label: "Rigg light", text: $project.lightRig)
+                        LabeledTextField(label: "Puissance disponible (Kw)", text: $project.lightingPower)
+                    }
                 }
             }
             
-            Section(header: Text("Vidéo - Détails").font(.headline)) {
-                HStack {
-                    Text("Type d'écran")
-                    Spacer()
-                    ModernTextField(placeholder: "", text: $project.screenType)
-                }
-                HStack {
-                    Text("Dimensions de l'écran")
-                    Spacer()
-                    ModernTextField(placeholder: "", text: $project.screenDimensions)
-                }
-                HStack {
-                    Text("Résolution")
-                    Spacer()
-                    ModernTextField(placeholder: "", text: $project.videoResolution)
-                }
-                HStack {
-                    Text("Captation")
-                    Spacer()
-                    ModernTextField(placeholder: "", text: $project.videoCaptation)
-                }
-                HStack {
-                    Text("Réalisation")
-                    Spacer()
-                    ModernTextField(placeholder: "", text: $project.videoProduction)
-                }
-                HStack {
-                    Text("Streaming")
-                    Spacer()
-                    ModernTextField(placeholder: "", text: $project.videoStreaming)
-                }
-                HStack {
-                    Text("Multiplex")
-                    Spacer()
-                    ModernTextField(placeholder: "", text: $project.videoMultiplex)
+            Section(header: Text("Vidéo").font(.headline)) {
+                CardView {
+                    VStack(alignment: .leading, spacing: 10) {
+                        LabeledTextField(label: "Medium de diffusion", text: $project.videoType)
+                        LabeledTextField(label: "Type d'écran", text: $project.screenType)
+                        LabeledTextField(label: "Dimensions de l'écran", text: $project.screenDimensions)
+                        LabeledTextField(label: "Rigg vidéo", text: $project.videoRig)
+                        LabeledTextField(label: "Résolution", text: $project.videoResolution)
+                        LabeledTextField(label: "Captation", text: $project.videoCaptation)
+                        LabeledTextField(label: "Réalisation", text: $project.videoProduction)
+                        LabeledTextField(label: "Streaming", text: $project.videoStreaming)
+                        LabeledTextField(label: "Multiplex", text: $project.videoMultiplex)
+                    }
                 }
             }
         }
-        .navigationTitle(Text(project.name.isEmpty ? "Nouveau Projet" : project.name))
+        .padding()
     }
 }
+
+import SwiftUI
 
 struct DecoDetailsView: View {
     @ObservedObject var project: Project
     
     var body: some View {
-        Form {
-            Section(header: Text("Décoration - Thème et Style").font(.headline)) {
-                HStack {
-                    Text("Thème")
-                    Spacer()
-                    ModernTextField(placeholder: "", text: $project.theme)
+        VStack(alignment: .leading, spacing: 20) {
+            Section(header: Text("Décoration").font(.headline))
+            {
+                CardView {
+                    VStack(alignment: .leading, spacing: 10) {
+                        LabeledTextField(label: "Thème", text: $project.theme)
+                        LabeledTextField(label: "Style", text: $project.style)
+                    }
                 }
-                HStack {
-                    Text("Style")
-                    Spacer()
-                    ModernTextField(placeholder: "", text: $project.style)
+            }
+            Section(header: Text("Habillage").font(.headline))
+            {
+                CardView {
+                    VStack(alignment: .leading, spacing: 10) {
+                        LabeledTextField(label: "Habillage scène", text: $project.stageDress)
+                        LabeledTextField(label: "Habillage CTS", text: $project.ctsDress)
+                        LabeledTextField(label: "Cloisonnement", text: $project.cabinDress)
+
+                    }
                 }
             }
             Section(header: Text("Décoration").font(.headline)) {
-                HStack {
-                    Text("Fleurs")
-                    Spacer()
-                    ModernTextField(placeholder: "", text: $project.flowerDetails)
-                }
-                HStack {
-                    Text("Mobilier")
-                    Spacer()
-                    ModernTextField(placeholder: "", text: $project.furnitureDetails)
-                }
-                HStack {
-                    Text("Éléments décoratifs")
-                    Spacer()
-                    ModernTextField(placeholder: "", text: $project.decorativeElements)
+                CardView {
+                    VStack(alignment: .leading, spacing: 10) {
+                        LabeledTextField(label: "Mobilier", text: $project.furnitureDetails)
+                        LabeledTextField(label: "Éléments décoratifs", text: $project.decorativeElements)
+                        LabeledTextField(label: "Fleurs", text: $project.flowerDetails)
+                    }
                 }
             }
         }
-        .navigationTitle(Text(project.name.isEmpty ? "" : project.name))
+        .padding()
     }
 }
 
-struct TeamView: View {
+
+
+struct TeamDetailsView: View {
+    @ObservedObject var project: Project
+    
     var body: some View {
-        VStack {
-            Text("Team")
-            // Add content for the Team tab here
+        VStack(alignment: .leading, spacing: 20) {
+            Section(header: Text("Équipe Brame").font(.headline)) {
+                CardView {
+                    VStack(alignment: .leading, spacing: 10) {
+                        LabeledTextField(label: "Directeur technique", text: $project.brameDirTech)
+                        LabeledTextField(label: "Chargé d'affaire", text: $project.brameProjectManager)
+                        LabeledTextField(label: "Commercial", text: $project.brameSalesManager)
+                        LabeledTextField(label: "Chef de chantier", text: $project.brameSiteManager)
+                        LabeledTextField(label: "Techniciens", text: $project.brameSechnicians)
+                        LabeledTextField(label: "Road", text: $project.brameRoad)
+
+                    }
+                }
+            }
+            Section(header: Text("Équipe Prod/Locale").font(.headline)) {
+                CardView {
+                    VStack(alignment: .leading, spacing: 10) {
+                        LabeledTextField(label: "Directeur technique", text: $project.localDirTech)
+                        LabeledTextField(label: "Chargé d'affaire", text: $project.localProjectManager)
+                        LabeledTextField(label: "Commercial", text: $project.localSalesManager)
+                        LabeledTextField(label: "Chef de chantier", text: $project.localSiteManager)
+                        LabeledTextField(label: "Techniciens", text: $project.localTechnicians)
+                        LabeledTextField(label: "Road", text: $project.localRoad)
+
+                    }
+                }
+            }
         }
+        .padding()
     }
 }
 

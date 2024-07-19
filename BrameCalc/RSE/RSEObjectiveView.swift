@@ -4,7 +4,7 @@ struct RSEObjectiveView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
-                Text("Groupe BRAME - RSE")
+                Text("RSE")
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .padding(.bottom, 10)

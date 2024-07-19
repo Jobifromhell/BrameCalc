@@ -48,10 +48,28 @@ struct AmpLoadCalcView: View {
     
     var body: some View {
         VStack(spacing: 20) {
-            ScrollView {
-                HeaderView()
+            HStack {
+                Text("AmpLoad")
+                    .font(.largeTitle)
+                    .bold()
+                    .padding()
+//                    .overlay(
+//                        RoundedRectangle(cornerRadius: 10)
+//                            .stroke(Color.gray, lineWidth: 1)
+//                    )
+                Text("Enclosure drive capacity per L-Acoustics amplified controller")
+                    .font(.system(size: 12))
+                    .foregroundColor(.gray)
+                    .multilineTextAlignment(.center)
+                    .padding(10)
+//                Spacer()
+            }
+            .padding(.horizontal)
+
+            Divider()
+            
+            VStack(alignment: .leading) {
                 
-                Divider()
                 
                 CategoryPicker(selectedCategory: $selectedCategory)
                     .onChange(of: selectedCategory) { newValue in
@@ -144,10 +162,8 @@ struct SpeakerAndAmpPicker: View {
                             .padding(10)
                     }
                 }
-                .pickerStyle(MenuPickerStyle())
+                .pickerStyle(SegmentedPickerStyle())
                 .padding()
-                .background(Color(.gray))
-                .cornerRadius(10)
                 .overlay(
                     RoundedRectangle(cornerRadius: 10)
                         .stroke(Color.gray, lineWidth: 1)
@@ -163,16 +179,16 @@ struct SpeakerAndAmpPicker: View {
                     ForEach(0..<selectedSpeaker.compatibleAmps.count, id: \.self) { index in
                         Text(selectedSpeaker.compatibleAmps[index].name)
                             .tag(index)
+                            .padding(10)
                     }
                 }
                 .pickerStyle(SegmentedPickerStyle())
                 .padding()
-                .background(Color(.gray))
-                .cornerRadius(10)
                 .overlay(
                     RoundedRectangle(cornerRadius: 10)
                         .stroke(Color.gray, lineWidth: 1)
                 )
+
             }
         }
         .padding()
@@ -214,7 +230,7 @@ struct InfoView: View {
                 .padding()
         }
         .padding()
-        .background(Color(.gray))
+        .background(Color.gray.opacity(0.2))
         .cornerRadius(10)
         .shadow(radius: 5)
         .foregroundColor(.primary)

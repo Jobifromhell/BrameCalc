@@ -11,9 +11,9 @@ struct BrameCalcApp: App {
             ContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
 //                .environmentObject(updaterController)
-                .onAppear {
-                    checkForUpdates()
-                }
+//                .onAppear {
+//                    checkForUpdates()
+//                }
         }
 //        .commands {
 //            CommandGroup(replacing: .appInfo) {

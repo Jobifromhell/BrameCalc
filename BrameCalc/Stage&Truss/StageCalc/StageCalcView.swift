@@ -20,6 +20,8 @@ struct StageCalcView: View {
                 Text("StageCalc")
                     .font(.largeTitle)
                     .padding()
+                    .bold()
+
                 Spacer()
                 Button("Préférences") {
                     showPreferences.toggle()
@@ -94,8 +96,8 @@ struct StageCalcView: View {
                     }
                     .disabled(!isInputValid())
                     .padding()
-                    .background(isInputValid() ? Color.blue : Color.clear)
-                    .foregroundColor(.white)
+                    .background(isInputValid() ? Color.gray : Color.clear)
+//                    .foregroundColor(.white)
                     .cornerRadius(10)
                     
 //                    Button("Préférences") {

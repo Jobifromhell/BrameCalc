@@ -114,19 +114,19 @@ struct TrussCalcView: View {
             }
             .padding(.horizontal)
             
-//            HStack {
-//                Button(action: {
-//                    calculateTruss()
-//                }) {
-//                    Text("Calculer")
-//                        .font(.headline)
-//                        .padding()
+            HStack {
+                Button(action: {
+                    calculateTruss()
+                }) {
+                    Text("Calculer")
+                        .font(.headline)
+                        .padding()
 //                        .background(Color.secondary)
-//                        .foregroundColor(.white)
-//                        .cornerRadius(10)
-//                }
-//                .padding(.horizontal)
-//
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
+                .padding(.horizontal)
+
 //                Button(action: {
 //                    showSettingsView.toggle()
 //                }) {
@@ -138,7 +138,7 @@ struct TrussCalcView: View {
 //                        .cornerRadius(10)
 //                }
 //                .padding(.horizontal)
-//            }
+            }
             .padding(.vertical)
             
             if trussCount.isEmpty {
@@ -169,6 +169,8 @@ struct TrussCalcView: View {
             
             Spacer()
         }
+        .padding()
+
         .sheet(isPresented: $showSettingsView) {
             SettingsView(stockManager: stockManager)
         }

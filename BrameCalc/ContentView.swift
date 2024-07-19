@@ -1,6 +1,6 @@
+
 import SwiftUI
 import AppKit
-
 
 struct ContentView: View {
     var body: some View {
@@ -22,9 +22,6 @@ struct Sidebar: View {
                     NavigationLink(destination: ContactView()) {
                         Label("Contact", systemImage: "phone.fill")
                     }
-//                    NavigationLink(destination: ContactView()) {
-//                        Label("Organigramme", systemImage: "person.3.fill")
-//                    }
                 }
                 
                 Section(header: Text("Projets")) {
@@ -46,12 +43,6 @@ struct Sidebar: View {
                     NavigationLink(destination: AmpLoadCalcView()) {
                         Label("AmpLoad", systemImage: "speaker.3.fill")
                     }
-//                    NavigationLink(destination: PrealignementDelayView()) {
-//                        Label("Alignement Delay", systemImage: "timer")
-//                    }
-//                    NavigationLink(destination: WaveLengthView()) {
-//                        Label("Longueur d'onde", systemImage: "waveform.path.ecg")
-//                    }
                 }
                 
                 Section(header: Text("Outils Light")) {
@@ -67,52 +58,27 @@ struct Sidebar: View {
                 }
                 
                 Section(header: Text("RSE")) {
-                                    NavigationLink(destination: RSEObjectiveView()) {
-                                        Label("Objectifs", systemImage: "leaf.fill")
-                                    }
-//                                    NavigationLink(destination: RSEAccomplishmentView()) {
-//                                        Label("Réalisations", systemImage: "checkmark.seal.fill")
-//                                    }
-//                                    NavigationLink(destination: CO2CalculationView()) {
-//                                        Label("Bilan Carbone", systemImage: "leaf.fill")
-//                                    }
-                                }
-                            }
-                            .listStyle(SidebarListStyle())
-                            
-                            Spacer()
-            
-            HStack {
-                Button(action: printMainView) {
-                    Label("Imprimer", systemImage: "printer")
+                    NavigationLink(destination: RSEObjectiveView()) {
+                        Label("Objectifs", systemImage: "leaf.fill")
+                    }
+                    NavigationLink(destination: CO2CalculationView()) {
+                        Label("Bilan Carbone", systemImage: "leaf.fill")
+                    }
                 }
-                .padding()
+
+                Section(header: Text("Documents")) {
+                    NavigationLink(destination: DocumentsView()) {
+                        Label("Téléchargements", systemImage: "doc.fill")
+                    }
+                }
             }
+            .listStyle(SidebarListStyle())
+            
+            Spacer()
         }
-    }
-    
-    private func printMainView() {
-        guard let mainView = NSApplication.shared.windows.first?.contentView?.superview else {
-            print("Erreur : Impossible de trouver la vue principale.")
-            return
-        }
-        
-        let printInfo = NSPrintInfo.shared
-        printInfo.horizontalPagination = .fit
-        printInfo.verticalPagination = .fit
-        printInfo.orientation = .portrait
-        printInfo.isHorizontallyCentered = true
-        printInfo.isVerticallyCentered = true
-        
-        let printOperation = NSPrintOperation(view: mainView)
-        printOperation.printInfo = printInfo
-        printOperation.canSpawnSeparateThread = true
-        printOperation.showsPrintPanel = true
-        printOperation.showsProgressPanel = true
-        
-        printOperation.run()
     }
 }
+
 struct MainView: View {
     var body: some View {
         Image("GROUPE-BRAME-PNG")
@@ -123,6 +89,7 @@ struct MainView: View {
             .frame(maxWidth: 400) // Taille maximale de l'image
     }
 }
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
