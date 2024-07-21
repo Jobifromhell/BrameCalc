@@ -114,7 +114,7 @@ struct ProjectMenuView: View {
                 
                 Spacer()
             }
-            .frame(minWidth: 200, maxWidth: 300)
+            .frame(/*minWidth: 100, */maxWidth: 200)
             
             VStack {
                 if let project = selectedProject {

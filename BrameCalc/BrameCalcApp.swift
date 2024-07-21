@@ -1,5 +1,5 @@
 import SwiftUI
-import Sparkle
+//import Sparkle
 
 @main
 struct BrameCalcApp: App {

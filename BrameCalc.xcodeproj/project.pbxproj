@@ -12,9 +12,7 @@
 		C90AFF742C488B0A00E51433 /* FORMULAIRE GROUPE BRAME CP - RTT - RC.pdf in Resources */ = {isa = PBXBuildFile; fileRef = C90AFF732C488B0A00E51433 /* FORMULAIRE GROUPE BRAME CP - RTT - RC.pdf */; };
 		C90AFF762C488C6E00E51433 /* ATTESTATION DE BON MONTAGE HYDRAUIV.pdf in Resources */ = {isa = PBXBuildFile; fileRef = C90AFF752C488C6E00E51433 /* ATTESTATION DE BON MONTAGE HYDRAUIV.pdf */; };
 		C90AFF7C2C48900300E51433 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90AFF782C488FF200E51433 /* QuickLook.framework */; };
-		C90AFF7D2C48900300E51433 /* QuickLook.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C90AFF782C488FF200E51433 /* QuickLook.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C90AFF7F2C48900400E51433 /* QuickLookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90AFF792C488FF200E51433 /* QuickLookUI.framework */; };
-		C90AFF802C48900400E51433 /* QuickLookUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C90AFF792C488FF200E51433 /* QuickLookUI.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C920C2272C1D01E700C26602 /* BrameCalcApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C920C2262C1D01E700C26602 /* BrameCalcApp.swift */; };
 		C920C2292C1D01E700C26602 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C920C2282C1D01E700C26602 /* ContentView.swift */; };
 		C920C22B2C1D01E800C26602 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C920C22A2C1D01E800C26602 /* Assets.xcassets */; };
@@ -34,6 +32,9 @@
 		C920C2AA2C20D92A00C26602 /* StageResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = C920C2A92C20D92A00C26602 /* StageResults.swift */; };
 		C920C2AC2C20D94E00C26602 /* StageElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C920C2AB2C20D94E00C26602 /* StageElement.swift */; };
 		C920C2AE2C20D96200C26602 /* StageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C920C2AD2C20D96200C26602 /* StageView.swift */; };
+		C942C95B2C4C7E29003D196F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C942C95A2C4C7E29003D196F /* CoreData.framework */; };
+		C942C9612C4C803C003D196F /* to do.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C942C9602C4C803C003D196F /* to do.rtf */; };
+		C942C9632C4C8161003D196F /* ExportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C942C9622C4C8161003D196F /* ExportView.swift */; };
 		C981B4A52C3DF2AD00BD352E /* RSEAccomplishementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C981B4A42C3DF2AD00BD352E /* RSEAccomplishementView.swift */; };
 		C981B4A72C3DF2C400BD352E /* RSECarbonFootPrintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C981B4A62C3DF2C400BD352E /* RSECarbonFootPrintView.swift */; };
 		C981B4A92C3DF53000BD352E /* RSEObjectives.swift in Sources */ = {isa = PBXBuildFile; fileRef = C981B4A82C3DF53000BD352E /* RSEObjectives.swift */; };
@@ -76,7 +77,6 @@
 		C9C9C2A32C3F1C0600F32CA1 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C9C2A22C3F1C0600F32CA1 /* UserDefaultsHelper.swift */; };
 		C9E1077F2C2105D4007D0F0F /* ScheduleCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E1077E2C2105D4007D0F0F /* ScheduleCalculator.swift */; };
 		C9E107812C2105FF007D0F0F /* ArtistInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E107802C2105FF007D0F0F /* ArtistInfo.swift */; };
-		C9ED16802C47D0BE005247B2 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = C9ED167F2C47D0BE005247B2 /* Sparkle */; };
 		C9F2EF692C44A03900F152BE /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F2EF682C44A03900F152BE /* ImagePicker.swift */; };
 		C9F2EF752C45D8AE00F152BE /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F2EF742C45D8AE00F152BE /* DetailsView.swift */; };
 		C9F2EF772C45D8E800F152BE /* PlansView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F2EF762C45D8E800F152BE /* PlansView.swift */; };
@@ -103,15 +103,13 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		C90AFF7E2C48900300E51433 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 8;
+			buildActionMask = 12;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C90AFF7D2C48900300E51433 /* QuickLook.framework in Embed Frameworks */,
-				C90AFF802C48900400E51433 /* QuickLookUI.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -145,6 +143,9 @@
 		C920C2A92C20D92A00C26602 /* StageResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageResults.swift; sourceTree = "<group>"; };
 		C920C2AB2C20D94E00C26602 /* StageElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageElement.swift; sourceTree = "<group>"; };
 		C920C2AD2C20D96200C26602 /* StageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageView.swift; sourceTree = "<group>"; };
+		C942C95A2C4C7E29003D196F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C942C9602C4C803C003D196F /* to do.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "to do.rtf"; sourceTree = "<group>"; };
+		C942C9622C4C8161003D196F /* ExportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportView.swift; sourceTree = "<group>"; };
 		C981B4A42C3DF2AD00BD352E /* RSEAccomplishementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSEAccomplishementView.swift; sourceTree = "<group>"; };
 		C981B4A62C3DF2C400BD352E /* RSECarbonFootPrintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSECarbonFootPrintView.swift; sourceTree = "<group>"; };
 		C981B4A82C3DF53000BD352E /* RSEObjectives.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSEObjectives.swift; sourceTree = "<group>"; };
@@ -199,7 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C90AFF7F2C48900400E51433 /* QuickLookUI.framework in Frameworks */,
-				C9ED16802C47D0BE005247B2 /* Sparkle in Frameworks */,
+				C942C95B2C4C7E29003D196F /* CoreData.framework in Frameworks */,
 				C90AFF7C2C48900300E51433 /* QuickLook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,6 +225,7 @@
 		C90AFF772C488FF200E51433 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C942C95A2C4C7E29003D196F /* CoreData.framework */,
 				C90AFF782C488FF200E51433 /* QuickLook.framework */,
 				C90AFF792C488FF200E51433 /* QuickLookUI.framework */,
 			);
@@ -256,6 +258,7 @@
 			children = (
 				C920C2262C1D01E700C26602 /* BrameCalcApp.swift */,
 				C920C2282C1D01E700C26602 /* ContentView.swift */,
+				C942C9602C4C803C003D196F /* to do.rtf */,
 				C981B4AE2C3E9EB100BD352E /* CloudKitManager.swift */,
 				C9A9F4B52C23743A0014A7F8 /* Documents */,
 				C9A9F4AB2C2370680014A7F8 /* Projects */,
@@ -410,6 +413,7 @@
 				C9F2EF762C45D8E800F152BE /* PlansView.swift */,
 				C9F2EF782C45D8F400F152BE /* PhotosView.swift */,
 				C9F2EF682C44A03900F152BE /* ImagePicker.swift */,
+				C942C9622C4C8161003D196F /* ExportView.swift */,
 				C98688472C49DB3900F5972C /* coding.swift */,
 			);
 			path = Projects;
@@ -488,7 +492,6 @@
 			);
 			name = BrameCalc;
 			packageProductDependencies = (
-				C9ED167F2C47D0BE005247B2 /* Sparkle */,
 			);
 			productName = BrameCalc;
 			productReference = C920C2232C1D01E700C26602 /* BrameCalc.app */;
@@ -563,7 +566,6 @@
 			);
 			mainGroup = C920C21A2C1D01E700C26602;
 			packageReferences = (
-				C9ED167E2C47D0BE005247B2 /* XCRemoteSwiftPackageReference "Sparkle" */,
 			);
 			productRefGroup = C920C2242C1D01E700C26602 /* Products */;
 			projectDirPath = "";
@@ -587,6 +589,7 @@
 				C90AFF742C488B0A00E51433 /* FORMULAIRE GROUPE BRAME CP - RTT - RC.pdf in Resources */,
 				C920C22E2C1D01E800C26602 /* Preview Assets.xcassets in Resources */,
 				C920C22B2C1D01E800C26602 /* Assets.xcassets in Resources */,
+				C942C9612C4C803C003D196F /* to do.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -644,6 +647,7 @@
 				C981B4A52C3DF2AD00BD352E /* RSEAccomplishementView.swift in Sources */,
 				C920C25A2C1D04B900C26602 /* Struct Gel.swift in Sources */,
 				C920C2292C1D01E700C26602 /* ContentView.swift in Sources */,
+				C942C9632C4C8161003D196F /* ExportView.swift in Sources */,
 				C9A057142C2104C6004ACB08 /* ScheduleView.swift in Sources */,
 				C9A9F49F2C236EF40014A7F8 /* RSEObjectiveView.swift in Sources */,
 				C9A057032C20FF0D004ACB08 /* SpeakerLoad.swift in Sources */,
@@ -741,6 +745,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -804,6 +809,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -834,6 +840,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"BrameCalc/Preview Content\"";
 				DEVELOPMENT_TEAM = 4B43GPHYV4;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -863,6 +870,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"BrameCalc/Preview Content\"";
 				DEVELOPMENT_TEAM = 4B43GPHYV4;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -890,6 +898,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 4B43GPHYV4;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.3;
@@ -909,6 +918,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 4B43GPHYV4;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.3;
@@ -927,6 +937,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 4B43GPHYV4;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
@@ -944,6 +955,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 4B43GPHYV4;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
@@ -995,25 +1007,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		C9ED167E2C47D0BE005247B2 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/sparkle-project/Sparkle/";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.6.4;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		C9ED167F2C47D0BE005247B2 /* Sparkle */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C9ED167E2C47D0BE005247B2 /* XCRemoteSwiftPackageReference "Sparkle" */;
-			productName = Sparkle;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		C920C2312C1D01E800C26602 /* BrameCalc.xcdatamodeld */ = {

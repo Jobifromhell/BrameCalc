@@ -14,7 +14,9 @@ struct ProjectDetailView: View {
         ("AV", "speaker.wave.2"),
         ("Déco", "paintbrush"),
         ("Plans", "map"),
-        ("Photos", "camera")
+        ("Photos", "camera"),
+        ("Export", "square.and.arrow.up")
+
     ]
 
     var body: some View {
@@ -40,6 +42,8 @@ struct ProjectDetailView: View {
                         PlansView(project: project)
                     case "Photos":
                         PhotosView(project: project)
+                    case "Export":
+                        ExportView(project: project)
                     default:
                         GeneralDetailsView(project: project)
                     }

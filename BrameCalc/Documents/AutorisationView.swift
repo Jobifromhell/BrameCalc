@@ -1,5 +1,5 @@
 import SwiftUI
-import QuickLook
+//import QuickLook
 
 // Extension to make URL conform to Identifiable
 extension URL: Identifiable {

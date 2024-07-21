@@ -3,6 +3,7 @@ import CloudKit
 
 class Project: ObservableObject, Identifiable, Codable {
     let id: UUID
+    
     @Published var name: String
     @Published var description: String
     @Published var agencyName: String
@@ -748,3 +749,5 @@ extension Project: Equatable {
             && lhs.localRoad == rhs.localRoad
     }
 }
+
+

@@ -4,7 +4,7 @@ struct GeneralDetailsView: View {
     @ObservedObject var project: Project
     
     var body: some View {
-        ScrollView {
+//        ScrollView {
             VStack(alignment: .leading, spacing: 20) {
                 Section(header: Text("Nom et Description du Projet").font(.headline)) {
                     CardView {
@@ -35,7 +35,7 @@ struct GeneralDetailsView: View {
                 }
             }
             .padding()
-        }
+//        }
     }
 }
 
